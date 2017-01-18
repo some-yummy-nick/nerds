@@ -24,7 +24,10 @@
     width: 640px;
   }
   @media ($desktop-widths) {
-    width: 960px;
+    width: 900px;
+  }
+  @media ($large-widths) {
+    width: 1200px;
   }
 }
 

@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
   <script>WebFont.load({
     google: {
-      families: ["PT Sans:400,700"]
+      families: ["Roboto:100,300,500"]
     }
   });</script>
   <noscript><span class="noscript">У Вас отключён JavaScript...Пожалуйста включите в его в настройках</span>
@@ -23,15 +23,243 @@
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen, projection, print">
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
+<p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a
+    href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a
+    href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
 <![endif]-->
+<div class="svg-wrapper" style="height: 0; width: 0; position: absolute; visibility: hidden">
+  @@include('../common/svg.html')
+</div>
 <div class="wrapper">
   <div class="content">
     @@include('../common/header.html')
+    <div class="carousel__wrapper">
+      <div class="carousel">
+        <div class="carousel__item">
+          <img class="carousel__image" src="images/slider-item-1.png" alt="This is the caption content" width="338">
+          <h3>Долго, дорого, скрупулезно</h3>
+          <p>
+            Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          </p>
+          <a class="btn  btn--red" href="#">Узнать больше</a>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__image" src="images/slider-item-2.png" alt="Captions">
+          <h3>Любите ли вы математику, как любим ее мы?</h3>
+          <p>
+            Нашим дизайнерам мы удаляем нейроны, ответственные за креатив,чтобы дать им возможность все просчитать.
+          </p>
+          <a class="btn  btn--red" href="#">Узнать больше</a>
+        </div>
+        <div class="carousel__item">
+          <img class="carousel__image" src="images/slider-item-3.png" alt="This will be overridden">
+          <h3>Только наркотики, только хардкор!</h3>
+          <p>
+            Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
+          </p>
+          <a class="btn btn--red" href="#">Узнать больше</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <div class="features__items">
+          <div class="features__item">
+            <div class="features__image">
+              <img src="images/catalog-product-1.png" width="240px" height="124" alt="продукт">
+            </div>
+            <h3 class="title">Веб-сайты</h3>
+            <p>Мир не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#" class="btn  btn--features  btn--red">Заказать</a>
+          </div>
+          <div class="features__item features__item--second">
+            <div class="features__image">
+              <img src="images/catalog-product-2.png" width="240px" height="124" alt="продукт">
+            </div>
+            <h3 class="title">Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="btn  btn--features  btn--green">Заказать</a>
+          </div>
+          <div class="features__item features__item--third">
+            <div class="features__image">
+              <img src="images/catalog-product-3.png" width="240px" height="124" alt="продукт">
+            </div>
+            <h3 class="title">Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="btn  btn--features  btn--yellow">Заказать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contents">
+      <div class="container">
+        <div class="contents__left">
+          <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+          <p>
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая
+            рук, как роботы.
+          </p>
+          <h2>Выполняем заказы на разработку:</h2>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="contents__right">
+          <svg>
+            <use xlink:href="#nerds"></use>
+          </svg>
+          <img src="images/content-right-image-2.png">
+        </div>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="container">
+        <div class="promo__images">
+          <div class="promo__link">
+            <a href="#">
+              <svg>
+                <use xlink:href="#glukhanko"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="promo__link">
+            <a href="#">
+              <svg>
+                <use xlink:href="#HTMLacademy"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="promo__link">
+            <a href="#">
+              <svg>
+                <use xlink:href="#borodinski"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <div class="filter">
+          <div class="title">Стоимость</div>
+          <div class="filter__controls">
+            <div class="filter__scale">
+              <div style="width:70%;" class="filter__bar"></div>
+            </div>
+            <div class="filter__toggle filter__toggle--min"></div>
+            <div class="filter__toggle filter__toggle--max"></div>
+          </div>
+          <div class="filter__price">
+            от
+            <input class="filter__price-min" type="text" value="0"> до
+            <input class="filter__price-max" type="text" value="15 000">
+          </div>
+          <div class="title">Сетка</div>
+          <input class="products__input" type="radio" name="grid" value="adaptive" id="adaptive" checked>
+          <label class="products__radio" for="adaptive">Адаптивная</label>
+          <input class="products__input" type="radio" name="grid" value="fixed" id="fixed">
+          <label class="products__radio" for="fixed">Фиксированная</label>
+          <input class="products__input" type="radio" name="grid" value="strange" id="strange">
+          <label class="products__radio" for="strange">Резиновая</label>
+          <div class="title">Особенности</div>
+          <input class="products__input" type="checkbox" name="features" value="slider" id="cslider">
+          <label class="products__checkbox" for="cslider">Слайдер</label>
+          <input class="products__input" type="checkbox" name="features" value="features-block" id="features-block">
+          <label class="products__checkbox" for="features-block">Блок преимуществ</label>
+          <input class="products__input" type="checkbox" name="features" value="news" id="news">
+          <label class="products__checkbox" for="news">Новости</label>
+          <input class="products__input" type="checkbox" name="features" value="gallery" id="gallery">
+          <label class="products__checkbox" for="gallery">Галерея</label>
+          <input class="products__input" type="checkbox" name="features" value="basket" id="basket">
+          <label class="products__checkbox" for="basket">Корзина</label>
+        </div>
+        <ul class="sort">
+          <li class="sort__item  sort__item--main">Сортировать:</li>
+          <li class="sort__item  sort__item--active">
+            <a class="sort__link" href="#">По цене</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link" href="#">По типу</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link" href="#">По цене</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link" href="#">По функционалу</a>
+          </li>
+        </ul>
+        <div class="products__reducer">
+          <div class="products__item">
+            <div class="products__hover">
+              <div class="title  title--hover">Киоск</div>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="btn btn--products  btn--red">10000 руб</div>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="products__hover">
+              <div class="title  title--hover">Киоск</div>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="btn btn--products  btn--red">10000 руб</div>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="products__hover">
+              <div class="title  title--hover">Киоск</div>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="btn btn--products  btn--red">10000 руб</div>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="products__hover">
+              <div class="title  title--hover">Киоск</div>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="btn btn--products  btn--red">10000 руб</div>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="products__hover">
+              <div class="title  title--hover">Киоск</div>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="btn btn--products  btn--red">10000 руб</div>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="products__hover">
+              <div class="title  title--hover">Киоск</div>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="btn btn--products  btn--red">10000 руб</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="paginator">
+      <a class="paginator__item  paginator__item--active" href="#">1</a>
+      <a class="paginator__item" href="#">2</a>
+      <a class="paginator__item" href="#">3</a>
+      <a class="paginator__item" href="#">Следущая</a>
+    </div>
+    <div id="mymap" style="width:100%; height:416px; overflow: hidden">
+
+      <div class="contacts">
+        <p class="contacts__title"><span >nЁrds</span> design studio</p>
+        <p>
+          3500, Краснодар, ул.Головатого, 100
+          <br>
+          <br>тел.+7(861)275-75-75</p>
+        <a href="#" class="btn  btn--contacts  btn--red">Напишите нам</a>
+      </div>
+    </div>
   </div>
   @@include('../common/footer.html')
 </div>
@@ -40,6 +268,41 @@
 <!-- endbower -->
 <script src="../../libraries/utils.js"></script>
 <!-- endbuild -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+  var flkty = new Flickity('.carousel', {
+    cellSelector: '.carousel__item',
+    pageDots: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    autoPlay: true
+  });
+</script>
+<!--<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;onload=init"></script>-->
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU&onload=init" type="text/javascript"> </script>
+<script>
+  var myMap;
+
+  function init(ymaps) {
+
+    myMap = new ymaps.Map('mymap', {
+
+      center: [45.04332357459006,38.94424049999998],
+      zoom: 19,
+      controls: ['zoomControl']
+    });
+
+    var myPlacemark = new ymaps.Placemark([45.04326272495296,38.94553600695417], {
+      hintContent: 'седона'
+    }, {
+      iconImageHref: '../images/map-image.png',
+      iconImageSize: [231, 190],
+      iconImageOffset: [-100, -190]
+    });
+    myMap.geoObjects.add(myPlacemark);
+    myMap.controls.add('zoomControl');
+  }
+</script>
 <script src="scripts/index.js"></script>
 </body>
 </html>

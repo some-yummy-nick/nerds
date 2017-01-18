@@ -1,0 +1,29 @@
+.promo {
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 75px;
+    margin-bottom: 80px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+  }
+
+  &__link {
+    margin-right: 20px;
+    a > svg {
+      opacity: 0.3;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  @media($tablet-widths) {
+      &__images{
+        justify-content: space-between;
+      }
+   }
+}

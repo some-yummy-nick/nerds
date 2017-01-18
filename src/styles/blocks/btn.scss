@@ -1,0 +1,61 @@
+.btn {
+  display: block;
+  width: 240px;
+  padding: 10px 0;
+  margin-top: 25px;
+  font-size: 12px;
+  font-weight: 500;
+  color:#fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
+  &:hover{
+    color: #fff;
+    background: #d6494d;
+  }
+  &--features {
+    width: 140px;
+    margin-top: -10px;
+
+  }
+  &--products{
+    width: 140px;
+    margin: auto;
+  }
+  &--contacts{
+    width: 195px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &--red{
+    &:hover{
+      background-color: #d6494d;
+    }
+    &:active{
+      background-color: #b63538;
+      box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+  &--green{
+    background: #00ca74;
+    &:hover{
+      background: darken(#00ca74,10%);
+    }
+    &:active{
+      background-color: #009053;
+      box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+  &--yellow{
+    background: #efc84a;
+    &:hover{
+      background: darken(#efc84a,10%);
+    }
+    &:active{
+      background-color: #c09b24;
+      box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+#mymap{
+  position: relative;
+  z-index: 1;
+}
+.contacts{
+  text-align: center;
+  background: #fff;
+  width: 240px;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 2;
+  &__title{
+    text-transform: uppercase;
+    span{
+      font-weight: 500;
+    }
+  }
+  font-weight: 300;
+
+}
